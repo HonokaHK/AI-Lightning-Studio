@@ -322,14 +322,15 @@ ai-lightning-studio/
 │       ├── app/          # App Router
 │       ├── components/   # Reactコンポーネント
 │       └── lib/          # ユーティリティ
+├── agents/               # LangChainエージェント
+│   ├── chains/           # 各フェーズのチェーン
+│   ├── prompts/          # プロンプトテンプレート
+│   └── utils/            # エージェント用ユーティリティ
 ├── backend/              # Python FastAPI バックエンド
 │   ├── app/
 │   │   ├── main.py       # FastAPI アプリケーション
 │   │   ├── api/          # APIルート
 │   │   │   └── v1/       # APIバージョン
-│   │   ├── agents/       # LangChainエージェント
-│   │   │   ├── chains/   # 各フェーズのチェーン
-│   │   │   └── prompts/  # プロンプトテンプレート
 │   │   ├── models/       # Pydanticモデル
 │   │   ├── core/         # 設定・認証
 │   │   └── utils/        # ユーティリティ
